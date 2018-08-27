@@ -2,6 +2,12 @@ provider "azurerm" {
   version = "1.12.0"
 }
 
+terraform {
+  backend "atlas" {
+    name = "niccorp/gophersearch-infra"
+  }
+}
+
 // Generate a SSH Key which can be used to access the servers
 resource "tls_private_key" "server" {
   algorithm = "RSA"
