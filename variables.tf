@@ -1,6 +1,6 @@
 variable "resource_group_name" {
   description = "Name of the resource group to create"
-  default     = "ms-oss-mishra"
+  default     = "gophersearch"
 }
 
 variable "location" {
